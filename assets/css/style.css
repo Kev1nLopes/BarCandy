@@ -31,6 +31,7 @@ header{
     background-color: black;
     display: flex;
     align-items: center;
+    position: sticky;
 }
 .header-content{
     display: flex;
@@ -87,7 +88,7 @@ header{
 /* MAIN STYLE */
 
 .first-page{
-    height: calc(100vh - 65px);
+    height: calc(100vh - 85px);
     background-image: url('../img/bg.jpg');
     background-size: cover;
     background-attachment: scroll;
@@ -118,13 +119,66 @@ header{
     height: 150px;
     font-weight: bold;
     font-size: 35px;
-    font-family: 'Righteous', cursive;;
+    font-family: 'Righteous', cursive;
     text-transform: uppercase;
     text-align: center;
     margin: 10px 15px;
     line-height: 40px;
 }
 
+/* Produtos */
+
+.products{
+    background-color: black;
+}
+ 
+.products-content{
+    color: white;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.products-content-title{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.products-title{
+    font-family: 'Righteous', cursive;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.bar-white{
+    width: 80px;
+    height: 5px;
+    background-color: white;
+    margin-top: 10px;
+    align-self: center;
+
+}
+.products-photos{
+    width: 500px;
+    
+}
+.products-photos .img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 13px;
+    margin-left: 13px;
+    float: left;
+    
+   
+}
+.products-photos .img img{
+    width: 150px;
+    height: 150px;
+}
 
 
 
