@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variaveis */
+
+:root{
+    --primary-color: #e4c0b8;
+}
+
+
+.container{
+    max-width: 1280px;
+    width: 1080px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+/* HEADER STYLE */
+
+header{
+    height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+.header-content .logo{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+.header-content .logo img{
+    height: 60px;
+    animation-name: candy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    
+}
+
+.header-content .logo h3{
+    font-size: 30px;
+    font-family: 'Lobster', cursive; ;
+
+}
+.header-content .logo h3 span{
+   color: #e4c0b8;
+
+}
+.header-content .menu{
+    width: 650px;
+    
+}
+.header-content .menu ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header-content .menu ul li{
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+    color: white;
+    
+
+}
+.header-content .menu ul li a:hover{
+    color:  var(--primary-color);
+    transition: 0.5s;
+}
+
+/* MAIN STYLE */
+
+.first-page{
+    height: calc(100vh - 65px);
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: right;
+    
+   
+}
+.first-page-content{
+    height: calc(100vh - 65px);
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+
+    
+    
+}
+.first-page-content .container .desc{
+    height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+   
+    
+    
+}
+.first-page-content .desc .phrase{
+    height: 150px;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Righteous', cursive;;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 15px;
+    line-height: 40px;
+}
+
+
+
+
+/* ANIMATIONS */
+@keyframes candy{
+    0%{
+        transform: rotateX(0);
+
+    }
+    25%{
+        transform: rotateX(20deg);
+    }
+    50%{
+        transform: rotateX(50deg);
+    }
+    75%{
+        transform: rotateY(30deg);
+    }
+    100%{
+        transform: rotateY(0);
+    }
+}
