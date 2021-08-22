@@ -5,32 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarCandy-Contact</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <!-- Estilos -->
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <!-- Fontes -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Righteous&display=swap');
+    </style>
 </head>
 <body>
-    <div class="container">
-        <form class="form">
-            <label for="nome">Informe seu nome
-                <input type="text" id="nome" placeholder="Informe seu nome">
-            </label>
-            <label for="numero">Contato
-                <input type="text" name="numero" id="numero" placeholder="Informe seu numero">
-            </label>
-            <label for="products">
-                <select name="products" id="products">Produto
-                   
-                    <option value="beijinhocaipirinha">Beijinho de Caipirinha - UN R$5,00 </option>
-                    <option value="brigadeirobarreiro">Brigadeiro Barreiro    - UN R$6,00 </option>
-                    <option value="brigadeiroconhaque">Brigadeiro de Conhaque - UN R$6,50 </option>
-                    <option value="brigadeiroconhaque">Brigadeiro de Cachaça  - UN R$3,50 </option>
-                    <option value="brigadeiroconhaque">Brigadeiro de Uísque - UN R$6,50 </option>
-                    <option value="brigadeiroconhaque">Brigadeiro de Conhaque - UN R$6,50 </option>
-                    <option value="brigadeiroconhaque">Brigadeiro de Conhaque - UN R$6,50 </option>
-               
-                </select>
-            </label>
-        </form>
-    </div>
+        <div class="forms">
+            <div class="container">
+                <div class="form">
+                    <form class="form-content">
+                        <legend>Faça seu pedido</legend>
+                        <label for="nome">Nome:
+                            <input type="text" id="nome" placeholder="Informe seu nome">
+                        </label>
+                        <label for="numero">Contato:
+                            <input type="text" name="numero" id="numero" placeholder="Informe seu numero">
+                        </label>
+                        <label for="products">Produto:
+                            <select name="products" id="products">
+                            
+                                <option value="0001" id="01">Beijinho de Caipirinha - UN R$5,00 </option>
+                                <option value="0002" id="02">Brigadeiro Barreiro    - UN R$6,00 </option>
+                                <option value="0003" id="03">Brigadeiro de Conhaque - UN R$6,50 </option>
+                                <option value="0004" id="04">Brigadeiro de Cachaça  -  UN R$3,50 </option>
+                                <option value="0005" id="05">Brigadeiro de Uísque -     UN R$4,50 </option>
+                                <option value="0006" id="06">Brigadeiro de Cerveja -   UN R$4,00 </option>
+                                
+                        
+                            </select>
+                        </label>
+                        <label for="quantidade">Unidades:
+                            <input type="number" name="quantidade" id="quantidade">
+
+                        </label>
+                        <input type="button" value="Pedir" id="btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+      <script src="../js/index.js"></script>
 </body>
 </html>
