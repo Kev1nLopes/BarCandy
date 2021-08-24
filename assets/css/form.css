@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 .forms{
     height: 100vh;
     background-color: red;
@@ -32,12 +35,17 @@
 .form-content label input{
    width: 260px;
    height: 17px;
+
 }
 .form-content label select{
-    width: 268px;
+    width: 150px;
     height: 19px;
 }
-form legend{
+.form-content input#valor{
+    width: 60px;
+    text-align: center;
+}
+.form-content h6{
     font-size: 30px;
     color: white;
     text-align: center;

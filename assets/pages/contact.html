@@ -19,7 +19,7 @@
             <div class="container">
                 <div class="form">
                     <form class="form-content">
-                        <legend>Faça seu pedido</legend>
+                        <h6>Faça seu pedido</h6>
                         <label for="nome">Nome:
                             <input type="text" id="nome" placeholder="Informe seu nome">
                         </label>
@@ -29,19 +29,24 @@
                         <label for="products">Produto:
                             <select name="products" id="products">
                             
-                                <option value="0001" id="01">Beijinho de Caipirinha - UN R$5,00 </option>
-                                <option value="0002" id="02">Brigadeiro Barreiro    - UN R$6,00 </option>
-                                <option value="0003" id="03">Brigadeiro de Conhaque - UN R$6,50 </option>
-                                <option value="0004" id="04">Brigadeiro de Cachaça  -  UN R$3,50 </option>
-                                <option value="0005" id="05">Brigadeiro de Uísque -     UN R$4,50 </option>
-                                <option value="0006" id="06">Brigadeiro de Cerveja -   UN R$4,00 </option>
+                                <option value="0001" id="01">Beijinho de Caipirinha</option>
+                                <option value="0002" id="02">Brigadeiro Barreiro</option>
+                                <option value="0003" id="03">Brigadeiro de Conhaque</option>
+                                <option value="0004" id="04">Brigadeiro de Cachaça</option>
+                                <option value="0005" id="05">Brigadeiro de Uísque</option>
+                                <option value="0006" id="06">Brigadeiro de Cerveja</option>
                                 
                         
                             </select>
+                            Valor:
+                            <input type="text" id="valor" disabled>
                         </label>
                         <label for="quantidade">Unidades:
                             <input type="number" name="quantidade" id="quantidade">
 
+                        </label>
+                        <label for="total">Total:
+                            <input type="text" id="total">
                         </label>
                         <input type="button" value="Pedir" id="btn">
                     </form>
