@@ -45,23 +45,15 @@
 .header-logo span{
     color: var(--primary-color);
 }
-.header-nav{
-    min-width: 50px;
-    width: 100px;
-}
+
 .header-nav .nav-button{
     display: none;
 }
 .header-nav .nav-line{
     height: 3px;
-    width: 20px;
+    width: 25px;
     background-color: white;
     margin: 5px 0px;
-}
-.header-nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -79,11 +71,12 @@
     .header-content{
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+       
     }
     .header-logo{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         font-size: 16px;
     }
@@ -92,13 +85,22 @@
     }
    .header-nav{
        display: flex;
-
+       align-items: center;
+      
    }
    .header-nav .nav-button{
        display: block;
    }
-    .header-nav ul{
-    display: none;
+    .header-nav ul#menu{
+    display: flex;
+    flex-direction: column;
+    transition: 1s;
+    background-color: black;
+    margin-top: 50px;
     }
+    .header-nav ul li{
+        display: none;
+    }
+    
     
 }
