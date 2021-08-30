@@ -1,25 +1,25 @@
 (function(){
     let btnnav = document.getElementById("btnnav");
+    btnnav.addEventListener("click", menuMobile);
+
+
+
+
+   
+})()
+
+
+
+
+
+function menuMobile(){
     let menu = document.getElementById("menu");
-    let lis = document.querySelectorAll("#menu li")
-    let open = false;
-    console.log(lis);
+    if(menu.classList.contains("active")){
+        menu.classList.remove("active");
+    }else{
+        menu.classList.add("active")
+    }
 
-    btnnav.addEventListener("click", function(){
-        open = !open;
-        if(open == false){
-            menu.style.width= "100px";
-            lis.forEach((li)=>{
-                li.style.display = "block"
-            })
-        }else{
-            menu.style.width= "0px";
-            lis.forEach((li)=>{
-                li.style.display = "none"
-            })
-        }
-        
-    })
-    
+   
 
-})();
+}

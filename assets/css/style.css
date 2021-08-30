@@ -12,95 +12,80 @@
     --main-font: 'Righteous', cursive;
     --second-font: 'Lobster', cursive; 
 }
- 
+
+
 
 /* Header */
 .header{
+    height: 8vh;
     background-color: black;
-    height: 68px;
-    color: white;
-    display: flex;
-    align-items: center;
 }
 .container{
-    min-width: 300px;
-    width: 1280px;
-    margin: auto;
+    width: 80vw;
+    min-width: 8vw;
+    margin: 0 auto;
+
 }
 .header-content{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 .header-logo{
-    display: inline-flex;
-    font-size: 32px;
+    display: flex;
+    color: white;
+    font-weight: bold;
     font-family: var(--second-font);
-
+    align-items: center;
+    font-size: 28px;
 }
 .header-logo img{
-    width: 60px;
-    height: 60px;
+    width: 4vw;
+
 }
-.header-logo span{
+.header-logo h3 span{
     color: var(--primary-color);
 }
+.header-nav ul#menu{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    font-family: var(--main-font);
+    min-width: 100px;
 
-.header-nav .nav-button{
-    display: none;
 }
-.header-nav .nav-line{
+.header-nav ul#menu li{
+    cursor: pointer;
+}
+.header-nav ul#menu li:hover{
+    color: var(--primary-color);
+    
+}
+.header-nav .nav-button .nav-line{
+    width: 32px;
     height: 3px;
-    width: 25px;
     background-color: white;
-    margin: 5px 0px;
+    margin: 5px;
 }
-
-
-
-
 
 
 /* Media Queries */
-@media (min-width: 300px)  and (max-width: 375px){
-    .container{
-        width: 280px;
-        margin: 0 auto;
-
+@media(max-width:999px){
+    body{
+        overflow-x: hidden;
     }
-    .header-content{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       
-    }
-    .header-logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 16px;
-    }
-    .header-logo img{
-        width: 40px;
-    }
-   .header-nav{
-       display: flex;
-       align-items: center;
-      
-   }
-   .header-nav .nav-button{
-       display: block;
-   }
     .header-nav ul#menu{
-    display: flex;
-    flex-direction: column;
-    transition: 1s;
-    background-color: black;
-    margin-top: 50px;
+        position: absolute;
+        width: 20vw;
+        height: 92vh;
+        background-color: black;
+        top: 8vh;
+        flex-direction: column;
+        transition: 1s;
+        transform: translateX(100%);
     }
-    .header-nav ul li{
-        display: none;
+    .header-nav ul#menu.active{
+        transform: translateX(0);
     }
-    
-    
 }
