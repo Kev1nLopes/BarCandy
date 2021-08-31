@@ -1,25 +1,22 @@
 (function(){
-    let btnnav = document.getElementById("btnnav");
-    btnnav.addEventListener("click", menuMobile);
-
-
-
-
-   
-})()
-
-
-
-
-
-function menuMobile(){
+    alert("Oi")
     let menu = document.getElementById("menu");
-    if(menu.classList.contains("active")){
-        menu.classList.remove("active");
-    }else{
-        menu.classList.add("active")
-    }
-
+    let list = document.getElementById("list");
    
+    menu.addEventListener("click", function(){
+        if(list.classList.contains("list-open")){
+            list.classList.remove("list-open")
+        }else{
+            list.classList.add("list-open");
+            document.querySelectorAll(".nav-list li").forEach((li)=>{
+                li.style.opacity = "0.9"
+            })
+        }
+    })
+   
+})();
 
-}
+
+
+
+

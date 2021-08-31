@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
 /* Variaveis */
 
 :root{
@@ -15,111 +22,94 @@
 
 
 /* Header */
-.header{
-    height: 8vh;
-    background-color: black;
-    position: relative;
-}
-.container{
-    width: 90%;
-    max-width: 1280px;
-    min-width: 8vw;
-    margin: 0 auto;
-
-}
-.header-content{
+.logo{
+    font-size: 24px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-.header-logo{
-    display: flex;
-    color: white;
-    font-weight: bold;
     font-family: var(--second-font);
-    align-items: center;
-    font-size: 28px;
-}
-.header-logo img{
-    width: 4vw;
-
-}
-.header-logo h3 span{
-    color: var(--primary-color);
-}
-.header-nav ul#menu{
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    color: white;
-    font-family: var(--main-font);
-    min-width: 100px;
-
-}
-.header-nav ul#menu li{
-    cursor: pointer;
-}
-.header-nav ul#menu li:hover{
-    color: var(--primary-color);
     
 }
-.header-nav .nav-button {
-    display: none;
+.logo span{
+    color: var(--primary-color)
 }
-.header-nav .nav-button .nav-line{
-    width: 32px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
+.logo img{
+    width: 50px;
 
-
-/* Main */
-
-.phrase{
-    height: 92vh;
-    background: url(../img/bg.jpg) no-repeat bottom center;
-    background-size: cover;
-    overflow-x: hidden;
 }
-.phrase-cover{
-    height: inherit;
-    background-color: rgba(0,0,0,0.6);
-}
-.pharse-content{
-    height: 92vh;
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 32px;
+nav{
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    color: white; 
-    text-transform: uppercase;
-    text-align: center;
+    background-color: black;
+    height: 8vh; 
 }
-/* Media Queries */
-@media(max-width:999px){
-    body{
-        overflow-x: hidden;
-    }
-    .header-nav .nav-button {
-        display: block;
-    }
-    .header-nav ul#menu{
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    cursor: pointer;
+    transition: 1s;
+}
+.nav-list li:hover a{
+   color: var(--primary-color)
+}
+.mobile-menu{
+    cursor: pointer;
+    display: none;
+    
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    cursor: pointer;
+    
+}
+
+
+section{
+    background: url("../img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 92vh;
+}
+.section-over{
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+@media (max-width:999px){
+  
+    .nav-list{
         position: absolute;
-        width: 20vw;
-        height: 92vh;
-        background-color: black;
         top: 8vh;
-        flex-direction: column;
-        align-items: center;
         right: 0;
-        transition: 1s;
-        transform: translateX(100%);
+        height: 92vh;
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+
+        
     }
-    .header-nav ul#menu.active{
-        transform: translateX(0);
-       
+    .list-open{
+        width: 20vw;
+        background-color: black;
     }
+    .mobile-menu{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-list li{
+        opacity: 0;
+        
+    }
+    
+    
 }
