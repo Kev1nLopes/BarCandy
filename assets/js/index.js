@@ -9,7 +9,7 @@
         }else{
             list.classList.add("list-open");
             document.querySelectorAll(".nav-list li").forEach((li)=>{
-                li.style.opacity = "0.9"
+                li.style.display = "block";
             })
         }
     })
