@@ -85,32 +85,42 @@ section{
 
 
 @media (max-width:999px){
+    body{
+        overflow-x: hidden !important;
+    }
   
     .nav-list{
+        overflow-x: hidden;
+        overflow-y: auto; 
         position: absolute;
         top: 8vh;
-        right: 0;
-        margin: 0;
+        right: 0px;
+        width: 0px;
         height: 92vh;
-        width: 0;
         display: flex;
         flex-direction: column;
-        transition: 0.5s;
+        justify-content: space-around;
+        align-items: center;
+        transition: 1s;
+        color: white;
+        z-index: 1;
+        background-color: black;
+        opacity: 0;
+        
 
         
     }
+   
     .list-open{
-        width: 20vw;
-        background-color: black;
+        width: 200px;
+        opacity: 1;
+        
     }
     .mobile-menu{
         display: block;
         cursor: pointer;
     }
-    .nav-list li{
-        display: none;
-        
-    }
+  
     
     
 }
