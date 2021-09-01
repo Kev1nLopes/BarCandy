@@ -7,6 +7,7 @@
         let h = false
         if(list.classList.contains("list-open")){
             list.classList.remove("list-open");
+            
           
         }else{
             list.classList.add("list-open");
