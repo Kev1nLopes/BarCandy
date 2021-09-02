@@ -19,7 +19,10 @@ a{
     --main-font: 'Righteous', cursive;
     --second-font: 'Lobster', cursive; 
 }
-
+.container{
+    width: 100%;
+    max-width: 990px;
+}
 
 /* Header */
 .logo{
@@ -54,9 +57,10 @@ nav{
     font-family: var(--main-font);
     cursor: pointer;
     transition: 1s;
+    color: white;
 }
 .nav-list li:hover a{
-   color: var(--primary-color)
+   color: var(--primary-color);
 }
 .mobile-menu{
     cursor: pointer;
@@ -75,7 +79,7 @@ nav{
 
 /* Main */
 
-section{
+section.interface{
     background: url("../img/bg.jpg") no-repeat center center;
     background-size: cover;
     height: 92vh;
@@ -96,6 +100,76 @@ section{
     font-family: var(--main-font);
     text-transform: uppercase;
 }
+section.products{
+    height: 70vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.products-title{
+    font-size: 28px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bar{
+    width: 8vw;
+    height: 5px;
+    background-color: white;
+    margin-top: 15px;
+}
+.products-content{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px 30px;
+    
+}
+.product{
+    position: relative;
+}
+
+.product img{
+    width: 100px;
+    height: 100px;
+   
+}
+
+
+.aboutus{
+    height: 50vh;
+    background: url("../img/bg.jpg") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutus .container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+}
+.aboutus-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.aboutus-content{
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+
 
 @media (max-width:999px){
     body{
