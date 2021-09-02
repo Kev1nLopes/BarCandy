@@ -129,31 +129,74 @@ section.products{
     grid-gap: 10px 30px;
     
 }
-.product{
-    position: relative;
+.product:nth-child(1){
+   width: 100px;
+   height: 100px;
+   background: url("../img/product1.jpg") no-repeat center center ;
+   background-size: cover;
 }
-
-.product img{
+.product:nth-child(2){
     width: 100px;
     height: 100px;
-   
-}
+    background: url("../img/product2.jpg") no-repeat center center ;
+    background-size: cover;
+ }
+ .product:nth-child(3){
+    width: 100px;
+    height: 100px;
+    background: url("../img/product3.jpg") no-repeat top center ;
+    background-size: cover;
+ }
+ .product:nth-child(4){
+    width: 100px;
+    height: 100px;
+    background: url("../img/product4.jpg") no-repeat center center ;
+    background-size: cover;
+ }
+ .product:nth-child(5){
+    width: 100px;
+    height: 100px;
+    background: url("../img/product5.jpg") no-repeat center center ;
+    background-size: cover;
+ }
+ .product:nth-child(6){
+    width: 100px;
+    height: 100px;
+    background: url("../img/product6.jpg") no-repeat center center ;
+    background-size: cover;
+ }
+ .product .product-over{
+     display: none;
+ }
+ .product:hover .product-over{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-transform: uppercase;
+     font-family: var(--second-font);
+     color: white;
+     height: inherit;
+     background-color: rgba(0, 0, 0, 0.3);
+ }
 
 
 .aboutus{
     height: 50vh;
-    background: url("../img/bg.jpg") no-repeat center center;
+    background: url("../img/bg2.jpg") no-repeat bottom center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   
 }
-.aboutus .container{
+.aboutus-over{
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.aboutus-over .container{
+    height: inherit;
     display: flex;
     flex-direction: column;
     width: 80%;
     align-items: center;
+    justify-content: center;
     margin: 0 auto;
 }
 .aboutus-title{
@@ -162,11 +205,16 @@ section.products{
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: var(--main-font);
 }
 .aboutus-content{
     color: white;
     text-align: center;
     width: 80%;
+
 }
 
 
